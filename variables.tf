@@ -8,7 +8,7 @@
 
 variable "environment" {
   description = "This environment for this stack"
-  default     = "prakash_demo"
+  default     = "demo"
 }
 
 variable "region" {
