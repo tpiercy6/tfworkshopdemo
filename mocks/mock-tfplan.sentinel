@@ -1,0 +1,1443 @@
+import "strings"
+import "types"
+
+_modules = {
+	"root": {
+		"data": {},
+		"path": [],
+		"resources": {
+			"aws_instance": {
+				"web": {
+					0: {
+						"applied": {
+							"ami": "ami-045137e8d34668746",
+							"credit_specification": [],
+							"get_password_data":    false,
+							"hibernation":          null,
+							"iam_instance_profile": null,
+							"instance_type":        "t2.micro",
+							"launch_template":      [],
+							"source_dest_check":    true,
+							"tags": {
+								"Customer": "bfree",
+								"Name":     "demo_demo_2021_0",
+							},
+							"tags_all": {
+								"Customer":    "bfree",
+								"Environment": "demo",
+								"Name":        "demo_demo_2021_0",
+								"Owner":       "TFProviders",
+								"Project":     "Test",
+								"importid":    "FN202100012",
+							},
+							"timeouts":    null,
+							"volume_tags": null,
+						},
+						"destroy": false,
+						"diff": {
+							"ami": {
+								"computed": false,
+								"new":      "ami-045137e8d34668746",
+								"old":      "",
+							},
+							"arn": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"associate_public_ip_address": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"availability_zone": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"capacity_reservation_specification.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"cpu_core_count": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"cpu_threads_per_core": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"credit_specification.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"disable_api_termination": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ebs_block_device.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ebs_optimized": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"enclave_options.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ephemeral_block_device.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"get_password_data": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"hibernation": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"host_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"iam_instance_profile": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"instance_initiated_shutdown_behavior": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"instance_state": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"instance_type": {
+								"computed": false,
+								"new":      "t2.micro",
+								"old":      "",
+							},
+							"ipv6_address_count": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ipv6_addresses.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"key_name": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"launch_template.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"metadata_options.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"monitoring": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"network_interface.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"outpost_arn": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"password_data": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"placement_group": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"placement_partition_number": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"primary_network_interface_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"private_dns": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"private_ip": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"public_dns": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"public_ip": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"root_block_device.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"secondary_private_ips.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"security_groups.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"source_dest_check": {
+								"computed": false,
+								"new":      "true",
+								"old":      "",
+							},
+							"subnet_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"tags.%": {
+								"computed": false,
+								"new":      "2",
+								"old":      "",
+							},
+							"tags.Customer": {
+								"computed": false,
+								"new":      "bfree",
+								"old":      "",
+							},
+							"tags.Name": {
+								"computed": false,
+								"new":      "demo_demo_2021_0",
+								"old":      "",
+							},
+							"tags_all.%": {
+								"computed": false,
+								"new":      "6",
+								"old":      "",
+							},
+							"tags_all.Customer": {
+								"computed": false,
+								"new":      "bfree",
+								"old":      "",
+							},
+							"tags_all.Environment": {
+								"computed": false,
+								"new":      "demo",
+								"old":      "",
+							},
+							"tags_all.Name": {
+								"computed": false,
+								"new":      "demo_demo_2021_0",
+								"old":      "",
+							},
+							"tags_all.Owner": {
+								"computed": false,
+								"new":      "TFProviders",
+								"old":      "",
+							},
+							"tags_all.Project": {
+								"computed": false,
+								"new":      "Test",
+								"old":      "",
+							},
+							"tags_all.importid": {
+								"computed": false,
+								"new":      "FN202100012",
+								"old":      "",
+							},
+							"tenancy": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"timeouts": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"user_data": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"user_data_base64": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"volume_tags": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"vpc_security_group_ids.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+					1: {
+						"applied": {
+							"ami": "ami-045137e8d34668746",
+							"credit_specification": [],
+							"get_password_data":    false,
+							"hibernation":          null,
+							"iam_instance_profile": null,
+							"instance_type":        "t2.micro",
+							"launch_template":      [],
+							"source_dest_check":    true,
+							"tags": {
+								"Customer": "bfree",
+								"Name":     "demo_demo_2021_1",
+							},
+							"tags_all": {
+								"Customer":    "bfree",
+								"Environment": "demo",
+								"Name":        "demo_demo_2021_1",
+								"Owner":       "TFProviders",
+								"Project":     "Test",
+								"importid":    "FN202100012",
+							},
+							"timeouts":    null,
+							"volume_tags": null,
+						},
+						"destroy": false,
+						"diff": {
+							"ami": {
+								"computed": false,
+								"new":      "ami-045137e8d34668746",
+								"old":      "",
+							},
+							"arn": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"associate_public_ip_address": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"availability_zone": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"capacity_reservation_specification.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"cpu_core_count": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"cpu_threads_per_core": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"credit_specification.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"disable_api_termination": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ebs_block_device.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ebs_optimized": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"enclave_options.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ephemeral_block_device.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"get_password_data": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"hibernation": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"host_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"iam_instance_profile": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"instance_initiated_shutdown_behavior": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"instance_state": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"instance_type": {
+								"computed": false,
+								"new":      "t2.micro",
+								"old":      "",
+							},
+							"ipv6_address_count": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ipv6_addresses.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"key_name": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"launch_template.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"metadata_options.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"monitoring": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"network_interface.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"outpost_arn": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"password_data": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"placement_group": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"placement_partition_number": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"primary_network_interface_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"private_dns": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"private_ip": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"public_dns": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"public_ip": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"root_block_device.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"secondary_private_ips.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"security_groups.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"source_dest_check": {
+								"computed": false,
+								"new":      "true",
+								"old":      "",
+							},
+							"subnet_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"tags.%": {
+								"computed": false,
+								"new":      "2",
+								"old":      "",
+							},
+							"tags.Customer": {
+								"computed": false,
+								"new":      "bfree",
+								"old":      "",
+							},
+							"tags.Name": {
+								"computed": false,
+								"new":      "demo_demo_2021_1",
+								"old":      "",
+							},
+							"tags_all.%": {
+								"computed": false,
+								"new":      "6",
+								"old":      "",
+							},
+							"tags_all.Customer": {
+								"computed": false,
+								"new":      "bfree",
+								"old":      "",
+							},
+							"tags_all.Environment": {
+								"computed": false,
+								"new":      "demo",
+								"old":      "",
+							},
+							"tags_all.Name": {
+								"computed": false,
+								"new":      "demo_demo_2021_1",
+								"old":      "",
+							},
+							"tags_all.Owner": {
+								"computed": false,
+								"new":      "TFProviders",
+								"old":      "",
+							},
+							"tags_all.Project": {
+								"computed": false,
+								"new":      "Test",
+								"old":      "",
+							},
+							"tags_all.importid": {
+								"computed": false,
+								"new":      "FN202100012",
+								"old":      "",
+							},
+							"tenancy": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"timeouts": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"user_data": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"user_data_base64": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"volume_tags": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"vpc_security_group_ids.#": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+			},
+			"aws_security_group": {
+				"hashi": {
+					0: {
+						"applied": {
+							"description": "Managed by Terraform",
+							"egress": [
+								{
+									"cidr_blocks": [
+										"0.0.0.0/0",
+									],
+									"description":      "",
+									"from_port":        0,
+									"ipv6_cidr_blocks": [],
+									"prefix_list_ids":  [],
+									"protocol":         "-1",
+									"security_groups":  [],
+									"self":             false,
+									"to_port":          0,
+								},
+							],
+							"ingress": [
+								{
+									"cidr_blocks": [
+										"0.0.0.0/0",
+									],
+									"description":      "",
+									"from_port":        22,
+									"ipv6_cidr_blocks": [],
+									"prefix_list_ids":  [],
+									"protocol":         "tcp",
+									"security_groups":  [],
+									"self":             false,
+									"to_port":          22,
+								},
+								{
+									"cidr_blocks": [
+										"0.0.0.0/0",
+									],
+									"description":      "",
+									"from_port":        443,
+									"ipv6_cidr_blocks": [],
+									"prefix_list_ids":  [],
+									"protocol":         "tcp",
+									"security_groups":  [],
+									"self":             false,
+									"to_port":          443,
+								},
+								{
+									"cidr_blocks": [
+										"0.0.0.0/0",
+									],
+									"description":      "",
+									"from_port":        80,
+									"ipv6_cidr_blocks": [],
+									"prefix_list_ids":  [],
+									"protocol":         "tcp",
+									"security_groups":  [],
+									"self":             false,
+									"to_port":          80,
+								},
+							],
+							"name": "demo-security-group",
+							"revoke_rules_on_delete": false,
+							"tags": {
+								"Name": "demo-security-group",
+							},
+							"tags_all": {
+								"Environment": "demo",
+								"Name":        "demo-security-group",
+								"Owner":       "TFProviders",
+								"Project":     "Test",
+								"importid":    "FN202100012",
+							},
+							"timeouts": null,
+						},
+						"destroy": false,
+						"diff": {
+							"arn": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"description": {
+								"computed": false,
+								"new":      "Managed by Terraform",
+								"old":      "",
+							},
+							"egress.#": {
+								"computed": false,
+								"new":      "1",
+								"old":      "",
+							},
+							"egress.0.%": {
+								"computed": false,
+								"new":      "9",
+								"old":      "",
+							},
+							"egress.0.cidr_blocks.#": {
+								"computed": false,
+								"new":      "1",
+								"old":      "",
+							},
+							"egress.0.cidr_blocks.0": {
+								"computed": false,
+								"new":      "0.0.0.0/0",
+								"old":      "",
+							},
+							"egress.0.description": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"egress.0.from_port": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"egress.0.ipv6_cidr_blocks.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"egress.0.prefix_list_ids.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"egress.0.protocol": {
+								"computed": false,
+								"new":      "-1",
+								"old":      "",
+							},
+							"egress.0.security_groups.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"egress.0.self": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"egress.0.to_port": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress.#": {
+								"computed": false,
+								"new":      "3",
+								"old":      "",
+							},
+							"ingress.0.%": {
+								"computed": false,
+								"new":      "9",
+								"old":      "",
+							},
+							"ingress.0.cidr_blocks.#": {
+								"computed": false,
+								"new":      "1",
+								"old":      "",
+							},
+							"ingress.0.cidr_blocks.0": {
+								"computed": false,
+								"new":      "0.0.0.0/0",
+								"old":      "",
+							},
+							"ingress.0.description": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress.0.from_port": {
+								"computed": false,
+								"new":      "22",
+								"old":      "",
+							},
+							"ingress.0.ipv6_cidr_blocks.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"ingress.0.prefix_list_ids.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"ingress.0.protocol": {
+								"computed": false,
+								"new":      "tcp",
+								"old":      "",
+							},
+							"ingress.0.security_groups.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"ingress.0.self": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"ingress.0.to_port": {
+								"computed": false,
+								"new":      "22",
+								"old":      "",
+							},
+							"ingress.1.%": {
+								"computed": false,
+								"new":      "9",
+								"old":      "",
+							},
+							"ingress.1.cidr_blocks.#": {
+								"computed": false,
+								"new":      "1",
+								"old":      "",
+							},
+							"ingress.1.cidr_blocks.0": {
+								"computed": false,
+								"new":      "0.0.0.0/0",
+								"old":      "",
+							},
+							"ingress.1.description": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress.1.from_port": {
+								"computed": false,
+								"new":      "443",
+								"old":      "",
+							},
+							"ingress.1.ipv6_cidr_blocks.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"ingress.1.prefix_list_ids.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"ingress.1.protocol": {
+								"computed": false,
+								"new":      "tcp",
+								"old":      "",
+							},
+							"ingress.1.security_groups.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"ingress.1.self": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"ingress.1.to_port": {
+								"computed": false,
+								"new":      "443",
+								"old":      "",
+							},
+							"ingress.2.%": {
+								"computed": false,
+								"new":      "9",
+								"old":      "",
+							},
+							"ingress.2.cidr_blocks.#": {
+								"computed": false,
+								"new":      "1",
+								"old":      "",
+							},
+							"ingress.2.cidr_blocks.0": {
+								"computed": false,
+								"new":      "0.0.0.0/0",
+								"old":      "",
+							},
+							"ingress.2.description": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"ingress.2.from_port": {
+								"computed": false,
+								"new":      "80",
+								"old":      "",
+							},
+							"ingress.2.ipv6_cidr_blocks.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"ingress.2.prefix_list_ids.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"ingress.2.protocol": {
+								"computed": false,
+								"new":      "tcp",
+								"old":      "",
+							},
+							"ingress.2.security_groups.#": {
+								"computed": false,
+								"new":      "0",
+								"old":      "",
+							},
+							"ingress.2.self": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"ingress.2.to_port": {
+								"computed": false,
+								"new":      "80",
+								"old":      "",
+							},
+							"name": {
+								"computed": false,
+								"new":      "demo-security-group",
+								"old":      "",
+							},
+							"name_prefix": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"owner_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"revoke_rules_on_delete": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"tags.%": {
+								"computed": false,
+								"new":      "1",
+								"old":      "",
+							},
+							"tags.Name": {
+								"computed": false,
+								"new":      "demo-security-group",
+								"old":      "",
+							},
+							"tags_all.%": {
+								"computed": false,
+								"new":      "5",
+								"old":      "",
+							},
+							"tags_all.Environment": {
+								"computed": false,
+								"new":      "demo",
+								"old":      "",
+							},
+							"tags_all.Name": {
+								"computed": false,
+								"new":      "demo-security-group",
+								"old":      "",
+							},
+							"tags_all.Owner": {
+								"computed": false,
+								"new":      "TFProviders",
+								"old":      "",
+							},
+							"tags_all.Project": {
+								"computed": false,
+								"new":      "Test",
+								"old":      "",
+							},
+							"tags_all.importid": {
+								"computed": false,
+								"new":      "FN202100012",
+								"old":      "",
+							},
+							"timeouts": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"vpc_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+			},
+			"aws_subnet": {
+				"hashi": {
+					0: {
+						"applied": {
+							"assign_ipv6_address_on_creation":                false,
+							"cidr_block":                                     "10.0.10.0/24",
+							"customer_owned_ipv4_pool":                       null,
+							"enable_dns64":                                   false,
+							"enable_resource_name_dns_a_record_on_launch":    false,
+							"enable_resource_name_dns_aaaa_record_on_launch": false,
+							"ipv6_cidr_block":                                null,
+							"ipv6_native":                                    false,
+							"map_customer_owned_ip_on_launch":                null,
+							"map_public_ip_on_launch":                        false,
+							"outpost_arn":                                    null,
+							"tags": {
+								"Name": "demo-subnet",
+							},
+							"tags_all": {
+								"Environment": "demo",
+								"Name":        "demo-subnet",
+								"Owner":       "TFProviders",
+								"Project":     "Test",
+								"importid":    "FN202100012",
+							},
+							"timeouts": null,
+						},
+						"destroy": false,
+						"diff": {
+							"arn": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"assign_ipv6_address_on_creation": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"availability_zone": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"availability_zone_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"cidr_block": {
+								"computed": false,
+								"new":      "10.0.10.0/24",
+								"old":      "",
+							},
+							"customer_owned_ipv4_pool": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"enable_dns64": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"enable_resource_name_dns_a_record_on_launch": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"enable_resource_name_dns_aaaa_record_on_launch": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ipv6_cidr_block": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"ipv6_cidr_block_association_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ipv6_native": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"map_customer_owned_ip_on_launch": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"map_public_ip_on_launch": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"outpost_arn": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"owner_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"private_dns_hostname_type_on_launch": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"tags.%": {
+								"computed": false,
+								"new":      "1",
+								"old":      "",
+							},
+							"tags.Name": {
+								"computed": false,
+								"new":      "demo-subnet",
+								"old":      "",
+							},
+							"tags_all.%": {
+								"computed": false,
+								"new":      "5",
+								"old":      "",
+							},
+							"tags_all.Environment": {
+								"computed": false,
+								"new":      "demo",
+								"old":      "",
+							},
+							"tags_all.Name": {
+								"computed": false,
+								"new":      "demo-subnet",
+								"old":      "",
+							},
+							"tags_all.Owner": {
+								"computed": false,
+								"new":      "TFProviders",
+								"old":      "",
+							},
+							"tags_all.Project": {
+								"computed": false,
+								"new":      "Test",
+								"old":      "",
+							},
+							"tags_all.importid": {
+								"computed": false,
+								"new":      "FN202100012",
+								"old":      "",
+							},
+							"timeouts": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"vpc_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+			},
+			"aws_vpc": {
+				"hashi": {
+					0: {
+						"applied": {
+							"assign_generated_ipv6_cidr_block": null,
+							"cidr_block":                       "10.0.0.0/16",
+							"enable_dns_hostnames":             true,
+							"enable_dns_support":               true,
+							"instance_tenancy":                 "default",
+							"ipv4_ipam_pool_id":                null,
+							"ipv4_netmask_length":              null,
+							"ipv6_ipam_pool_id":                null,
+							"ipv6_netmask_length":              null,
+							"tags": {
+								"Name": "demo-vpc-us-east-2",
+							},
+							"tags_all": {
+								"Environment": "demo",
+								"Name":        "demo-vpc-us-east-2",
+								"Owner":       "TFProviders",
+								"Project":     "Test",
+								"importid":    "FN202100012",
+							},
+						},
+						"destroy": false,
+						"diff": {
+							"arn": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"assign_generated_ipv6_cidr_block": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"cidr_block": {
+								"computed": false,
+								"new":      "10.0.0.0/16",
+								"old":      "",
+							},
+							"default_network_acl_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"default_route_table_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"default_security_group_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"dhcp_options_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"enable_classiclink": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"enable_classiclink_dns_support": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"enable_dns_hostnames": {
+								"computed": false,
+								"new":      "true",
+								"old":      "",
+							},
+							"enable_dns_support": {
+								"computed": false,
+								"new":      "true",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"instance_tenancy": {
+								"computed": false,
+								"new":      "default",
+								"old":      "",
+							},
+							"ipv4_ipam_pool_id": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"ipv4_netmask_length": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"ipv6_association_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ipv6_cidr_block": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ipv6_cidr_block_network_border_group": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ipv6_ipam_pool_id": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"ipv6_netmask_length": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"main_route_table_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"owner_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"tags.%": {
+								"computed": false,
+								"new":      "1",
+								"old":      "",
+							},
+							"tags.Name": {
+								"computed": false,
+								"new":      "demo-vpc-us-east-2",
+								"old":      "",
+							},
+							"tags_all.%": {
+								"computed": false,
+								"new":      "5",
+								"old":      "",
+							},
+							"tags_all.Environment": {
+								"computed": false,
+								"new":      "demo",
+								"old":      "",
+							},
+							"tags_all.Name": {
+								"computed": false,
+								"new":      "demo-vpc-us-east-2",
+								"old":      "",
+							},
+							"tags_all.Owner": {
+								"computed": false,
+								"new":      "TFProviders",
+								"old":      "",
+							},
+							"tags_all.Project": {
+								"computed": false,
+								"new":      "Test",
+								"old":      "",
+							},
+							"tags_all.importid": {
+								"computed": false,
+								"new":      "FN202100012",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+			},
+		},
+	},
+}
+
+module_paths = [
+	[],
+]
+
+terraform_version = "1.1.6"
+
+variables = {
+	"address_space": "10.0.0.0/16",
+	"environment":   "demo",
+	"instance_type": "t2.micro",
+	"region":        "us-east-2",
+	"subnet_prefix": "10.0.10.0/24",
+}
+
+module = func(path) {
+	if types.type_of(path) is not "list" {
+		error("expected list, got", types.type_of(path))
+	}
+
+	if length(path) < 1 {
+		return _modules.root
+	}
+
+	addr = []
+	for path as p {
+		append(addr, "module")
+		append(addr, p)
+	}
+
+	return _modules[strings.join(addr, ".")]
+}
+
+data = _modules.root.data
+path = _modules.root.path
+resources = _modules.root.resources

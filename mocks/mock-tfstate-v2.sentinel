@@ -1,0 +1,100 @@
+terraform_version = "1.1.6"
+
+outputs = {}
+
+resources = {
+	"aws_ami.ubuntu": {
+		"address":        "aws_ami.ubuntu",
+		"depends_on":     [],
+		"deposed_key":    "",
+		"index":          null,
+		"mode":           "data",
+		"module_address": "",
+		"name":           "ubuntu",
+		"provider_name":  "registry.terraform.io/hashicorp/aws",
+		"tainted":        false,
+		"type":           "aws_ami",
+		"values": {
+			"architecture": "x86_64",
+			"arn":          "arn:aws:ec2:us-east-2::image/ami-045137e8d34668746",
+			"block_device_mappings": [
+				{
+					"device_name": "/dev/sda1",
+					"ebs": {
+						"delete_on_termination": "true",
+						"encrypted":             "false",
+						"iops":                  "0",
+						"snapshot_id":           "snap-016030e3532ae217f",
+						"throughput":            "0",
+						"volume_size":           "8",
+						"volume_type":           "gp2",
+					},
+					"no_device":    "",
+					"virtual_name": "",
+				},
+				{
+					"device_name":  "/dev/sdb",
+					"ebs":          {},
+					"no_device":    "",
+					"virtual_name": "ephemeral0",
+				},
+				{
+					"device_name":  "/dev/sdc",
+					"ebs":          {},
+					"no_device":    "",
+					"virtual_name": "ephemeral1",
+				},
+			],
+			"boot_mode":        "",
+			"creation_date":    "2022-03-08T23:53:53.000Z",
+			"description":      "Canonical, Ubuntu, 20.04 LTS, amd64 focal image build on 2022-03-08",
+			"ena_support":      true,
+			"executable_users": null,
+			"filter": [
+				{
+					"name": "name",
+					"values": [
+						"ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*",
+					],
+				},
+				{
+					"name": "virtualization-type",
+					"values": [
+						"hvm",
+					],
+				},
+			],
+			"hypervisor":        "xen",
+			"id":                "ami-045137e8d34668746",
+			"image_id":          "ami-045137e8d34668746",
+			"image_location":    "099720109477/ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20220308",
+			"image_owner_alias": null,
+			"image_type":        "machine",
+			"kernel_id":         null,
+			"most_recent":       true,
+			"name":              "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20220308",
+			"name_regex":        null,
+			"owner_id":          "099720109477",
+			"owners": [
+				"099720109477",
+			],
+			"platform":          null,
+			"platform_details":  "Linux/UNIX",
+			"product_codes":     [],
+			"public":            true,
+			"ramdisk_id":        null,
+			"root_device_name":  "/dev/sda1",
+			"root_device_type":  "ebs",
+			"root_snapshot_id":  "snap-016030e3532ae217f",
+			"sriov_net_support": "simple",
+			"state":             "available",
+			"state_reason": {
+				"code":    "UNSET",
+				"message": "UNSET",
+			},
+			"tags":                {},
+			"usage_operation":     "RunInstances",
+			"virtualization_type": "hvm",
+		},
+	},
+}

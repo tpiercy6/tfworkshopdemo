@@ -1,0 +1,291 @@
+import "strings"
+import "types"
+
+_modules = {
+	"root": {
+		"data": {
+			"aws_ami": {
+				"ubuntu": {
+					"config": {
+						"filter": [
+							{
+								"name": "name",
+								"values": [
+									"ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-*",
+								],
+							},
+							{
+								"name": "virtualization-type",
+								"values": [
+									"hvm",
+								],
+							},
+						],
+						"most_recent": true,
+						"owners": [
+							"099720109477",
+						],
+					},
+					"provisioners": null,
+					"references": {
+						"filter": [
+							{
+								"name":   [],
+								"values": [],
+							},
+							{
+								"name":   [],
+								"values": [],
+							},
+						],
+						"most_recent": [],
+						"owners":      [],
+					},
+				},
+			},
+		},
+		"modules": {},
+		"outputs": {},
+		"providers": {
+			"aws": {
+				"alias": {
+					"": {
+						"config": {
+							"default_tags": [
+								{},
+							],
+						},
+						"references": {
+							"default_tags": [
+								{
+									"tags": [
+										"var.environment",
+										"var.region",
+										"var.environment",
+									],
+								},
+							],
+							"region": [
+								"var.region",
+							],
+						},
+						"version": "",
+					},
+				},
+				"config": {
+					"default_tags": [
+						{},
+					],
+				},
+				"references": {
+					"default_tags": [
+						{
+							"tags": [
+								"var.environment",
+								"var.region",
+								"var.environment",
+							],
+						},
+					],
+					"region": [
+						"var.region",
+					],
+				},
+				"version": "",
+			},
+		},
+		"resources": {
+			"aws_instance": {
+				"web": {
+					"config": {
+						"instance_type": "t2.micro",
+					},
+					"provisioners": null,
+					"references": {
+						"ami": [
+							"data.aws_ami.ubuntu.id",
+							"data.aws_ami.ubuntu",
+						],
+						"instance_type": [],
+						"subnet_id": [
+							"aws_subnet.hashi.id",
+							"aws_subnet.hashi",
+						],
+						"tags": [
+							"var.environment",
+							"count.index",
+						],
+						"vpc_security_group_ids": [
+							"aws_security_group.hashi.id",
+							"aws_security_group.hashi",
+						],
+					},
+				},
+			},
+			"aws_security_group": {
+				"hashi": {
+					"config": {
+						"egress": [
+							{
+								"cidr_blocks": [
+									"0.0.0.0/0",
+								],
+								"description":      null,
+								"from_port":        0,
+								"ipv6_cidr_blocks": null,
+								"prefix_list_ids":  [],
+								"protocol":         "-1",
+								"security_groups":  null,
+								"self":             null,
+								"to_port":          0,
+							},
+						],
+						"ingress": [
+							{
+								"cidr_blocks": [
+									"0.0.0.0/0",
+								],
+								"description":      null,
+								"from_port":        22,
+								"ipv6_cidr_blocks": null,
+								"prefix_list_ids":  null,
+								"protocol":         "tcp",
+								"security_groups":  null,
+								"self":             null,
+								"to_port":          22,
+							},
+							{
+								"cidr_blocks": [
+									"0.0.0.0/0",
+								],
+								"description":      null,
+								"from_port":        80,
+								"ipv6_cidr_blocks": null,
+								"prefix_list_ids":  null,
+								"protocol":         "tcp",
+								"security_groups":  null,
+								"self":             null,
+								"to_port":          80,
+							},
+							{
+								"cidr_blocks": [
+									"0.0.0.0/0",
+								],
+								"description":      null,
+								"from_port":        443,
+								"ipv6_cidr_blocks": null,
+								"prefix_list_ids":  null,
+								"protocol":         "tcp",
+								"security_groups":  null,
+								"self":             null,
+								"to_port":          443,
+							},
+						],
+					},
+					"provisioners": null,
+					"references": {
+						"egress":  [],
+						"ingress": [],
+						"name": [
+							"var.environment",
+						],
+						"tags": [
+							"var.environment",
+						],
+						"vpc_id": [
+							"aws_vpc.hashi.id",
+							"aws_vpc.hashi",
+						],
+					},
+				},
+			},
+			"aws_subnet": {
+				"hashi": {
+					"config":       {},
+					"provisioners": null,
+					"references": {
+						"cidr_block": [
+							"var.subnet_prefix",
+						],
+						"tags": [
+							"var.environment",
+						],
+						"vpc_id": [
+							"aws_vpc.hashi.id",
+							"aws_vpc.hashi",
+						],
+					},
+				},
+			},
+			"aws_vpc": {
+				"hashi": {
+					"config": {
+						"enable_dns_hostnames": true,
+					},
+					"provisioners": null,
+					"references": {
+						"cidr_block": [
+							"var.address_space",
+						],
+						"enable_dns_hostnames": [],
+						"tags": [
+							"var.environment",
+							"var.region",
+						],
+					},
+				},
+			},
+		},
+		"variables": {
+			"address_space": {
+				"default":     "10.0.0.0/16",
+				"description": "The address space that is used by the virtual network. You can supply more than one address space. Changing this forces a new resource to be created.",
+			},
+			"environment": {
+				"default":     "demo",
+				"description": "This environment for this stack",
+			},
+			"instance_type": {
+				"default":     "t2.micro",
+				"description": "Specifies the AWS instance type.",
+			},
+			"region": {
+				"default":     "us-east-2",
+				"description": "The region where the resources are created.",
+			},
+			"subnet_prefix": {
+				"default":     "10.0.10.0/24",
+				"description": "The address prefix to use for the subnet.",
+			},
+		},
+	},
+}
+
+module_paths = [
+	[],
+]
+
+module = func(path) {
+	if types.type_of(path) is not "list" {
+		error("expected list, got", types.type_of(path))
+	}
+
+	if length(path) < 1 {
+		return _modules.root
+	}
+
+	addr = []
+	for path as p {
+		append(addr, "module")
+		append(addr, p)
+	}
+
+	return _modules[strings.join(addr, ".")]
+}
+
+data = _modules.root.data
+modules = _modules.root.modules
+providers = _modules.root.providers
+resources = _modules.root.resources
+variables = _modules.root.variables
+outputs = _modules.root.outputs

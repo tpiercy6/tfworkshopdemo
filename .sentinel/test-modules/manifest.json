@@ -1,0 +1,70 @@
+{
+	"records": [
+		{
+			"key": "test/enforce-mandatory-tags/fail-missing-tags/tfplan-functions",
+			"source": "../../../common-functions/tfplan-functions/tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/tpiercy/common-functions/tfplan-functions/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/enforce-mandatory-tags/pass/tfplan-functions",
+			"source": "../../../common-functions/tfplan-functions/tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/tpiercy/common-functions/tfplan-functions/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/restrict-ec2-instance-type/fail/tfplan-functions",
+			"source": "../../../common-functions/tfplan-functions/tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/tpiercy/common-functions/tfplan-functions/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/enforce-mandatory-tags/fail-no-tags/aws-functions",
+			"source": "../../aws-functions/aws-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/tpiercy/tfworkshopdemo/aws-functions/aws-functions.sentinel"
+		},
+		{
+			"key": "test/enforce-mandatory-tags/pass/aws-functions",
+			"source": "../../aws-functions/aws-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/tpiercy/tfworkshopdemo/aws-functions/aws-functions.sentinel"
+		},
+		{
+			"key": "test/restrict-ec2-instance-type/pass/tfplan-functions",
+			"source": "../../../common-functions/tfplan-functions/tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/tpiercy/common-functions/tfplan-functions/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/enforce-mandatory-tags/fail-no-tags/tfplan-functions",
+			"source": "../../../common-functions/tfplan-functions/tfplan-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/tpiercy/common-functions/tfplan-functions/tfplan-functions.sentinel"
+		},
+		{
+			"key": "test/enforce-mandatory-tags/fail-missing-tags/aws-functions",
+			"source": "../../aws-functions/aws-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/tpiercy/tfworkshopdemo/aws-functions/aws-functions.sentinel"
+		},
+		{
+			"key": "test/enforce-mandatory-tags/pass/tfconfig-functions",
+			"source": "../../../common-functions/tfconfig-functions/tfconfig-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/tpiercy/common-functions/tfconfig-functions/tfconfig-functions.sentinel"
+		},
+		{
+			"key": "test/enforce-mandatory-tags/fail-no-tags/tfconfig-functions",
+			"source": "../../../common-functions/tfconfig-functions/tfconfig-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/tpiercy/common-functions/tfconfig-functions/tfconfig-functions.sentinel"
+		},
+		{
+			"key": "test/enforce-mandatory-tags/fail-missing-tags/tfconfig-functions",
+			"source": "../../../common-functions/tfconfig-functions/tfconfig-functions.sentinel",
+			"sourceSum": "",
+			"dest": "/home/tpiercy/common-functions/tfconfig-functions/tfconfig-functions.sentinel"
+		}
+	]
+}
